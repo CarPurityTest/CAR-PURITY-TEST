@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Purity Test</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Car Purity Test</h1>
+<p>Check all that apply to your car and see how cool it is!</p>
+
+<form id="coolnessForm">
+
+  <!-- Drivetrain & Transmission -->
+  <div class="section">
+    <h2>Drivetrain & Transmission</h2>
+    <div class="question"><input type="checkbox" data-points="10" id="manual"><label for="manual"> Manual transmission</label></div>
+    <div class="question"><input type="checkbox" data-points="6" id="dualclutch"><label for="dualclutch"> Dual clutch / auto-manual</label></div>
+    <div class="question"><input type="checkbox" data-points="-6" id="cvt"><label for="cvt"> CVT</label></div>
+    <div class="question"><input type="checkbox" data-points="8" id="rwd"><label for="rwd"> RWD</label></div>
+    <div class="question"><input type="checkbox" data-points="5" id="awd"><label for="awd"> AWD</label></div>
+    <div class="question"><input type="checkbox" data-points="-8" id="electric"><label for="electric"> Fully electric</label></div>
+    <div class="question"><input type="checkbox" data-points="-6" id="hybrid"><label for="hybrid"> Hybrid</label></div>
+  </div>
+
+  <!-- Body Type & Purpose -->
+  <div class="section">
+    <h2>Body Type & Purpose</h2>
+    <div class="question"><input type="checkbox" data-points="8" id="coupe"><label for="coupe"> Coupe / 2-door sports car</label></div>
+    <div class="question"><input type="checkbox" data-points="3" id="sedan"><label for="sedan"> Sedan</label></div>
+    <div class="question"><input type="checkbox" data-points="4" id="wagon"><label for="wagon"> Wagon</label></div>
+    <div class="question"><input type="checkbox" data-points="2" id="hatchback"><label for="hatchback"> Hatchback</label></div>
+    <div class="question"><input type="checkbox" data-points="4" id="convertible"><label for="convertible"> Convertible</label></div>
+    <div class="question"><input type="checkbox" data-points="-10" id="suv"><label for="suv"> SUV / crossover</label></div>
+    <div class="question"><input type="checkbox" data-points="-15" id="minivan"><label for="minivan"> Minivan</label></div>
+    <div class="question"><input type="checkbox" data-points="4" id="sportpickup"><label for="sportpickup"> Sport/performance pickup truck</label></div>
+    <div class="question"><input type="checkbox" data-points="0" id="workpickup"><label for="workpickup"> Basic / work pickup truck</label></div>
+  </div>
+
+  <!-- Performance & Engineering -->
+  <div class="section">
+    <h2>Performance & Engineering</h2>
+    <div class="question"><input type="checkbox" data-points="5" id="turbo"><label for="turbo"> Turbocharged / supercharged</label></div>
+    <div class="question"><input type="checkbox" data-points="4" id="highrev"><label for="highrev"> High-revving NA engine</label></div>
+    <div class="question"><input type="checkbox" data-points="6" id="powerweight"><label for="powerweight"> Power-to-weight ratio > 0.08</label></div>
+    <div class="question"><input type="checkbox" data-points="10" id="track"><label for="track"> Track / autocross</label></div>
+    <div class="question"><input type="checkbox" data-points="4" id="tuned"><label for="tuned"> Tuned / modified engine</label></div>
+    <div class="question"><input type="checkbox" data-points="-6" id="cvtslow"><label for="cvtslow"> CVT under 150 hp</label></div>
+    <div class="question"><input type="checkbox" data-points="-4" id="slow"><label for="slow"> 0–100 km/h slower than 9 seconds</label></div>
+    <div class="question"><input type="checkbox" data-points="3" id="exhaust"><label for="exhaust"> Loud or characterful exhaust</label></div>
+  </div>
+
+  <!-- Rarity & Heritage -->
+  <div class="section">
+    <h2>Rarity & Heritage</h2>
+    <div class="question"><input type="checkbox" data-points="4" id="discontinued"><label for="discontinued"> Discontinued model</label></div>
+    <div class="question"><input type="checkbox" data-points="10" id="lowproduction"><label for="lowproduction"> Produced under 50,000 units</label></div>
+    <div class="question"><input type="checkbox" data-points="6" id="cult"><label for="cult"> Cult / enthusiast following</label></div>
+    <div class="question"><input type="checkbox" data-points="-3" id="massproduced"><label for="massproduced"> Still produced in large volumes</label></div>
+    <div class="question"><input type="checkbox" data-points="-8" id="rental"><label for="rental"> Common rental / fleet car</label></div>
+    <div class="question"><input type="checkbox" data-points="8" id="oldwellkept"><label for="oldwellkept"> Over 20 years old and well-kept</label></div>
+    <div class="question"><input type="checkbox" data-points="5" id="motorsport"><label for="motorsport"> Motorsports heritage</label></div>
+  </div>
+
+  <!-- Style & Presence -->
+  <div class="section">
+    <h2>Style & Presence</h2>
+    <div class="question"><input type="checkbox" data-points="3" id="wheels"><label for="wheels"> Aftermarket wheels / stance (tasteful)</label></div>
+    <div class="question"><input type="checkbox" data-points="3" id="aggressive"><label for="aggressive"> Aggressive OEM / modified styling</label></div>
+    <div class="question"><input type="checkbox" data-points="3" id="color"><label for="color"> Unique color or wrap</label></div>
+    <div class="question"><input type="checkbox" data-points="3" id="livery"><label for="livery"> Tasteful livery / track-inspired decals</label></div>
+    <div class="question"><input type="checkbox" data-points="-5" id="decals"><label for="decals"> 2+ non-factory decals (no track use)</label></div>
+    <div class="question"><input type="checkbox" data-points="-10" id="stickerbomb"><label for="stickerbomb"> Stickerbomb / fake sponsor clutter</label></div>
+    <div class="question"><input type="checkbox" data-points="-5" id="cute"><label for="cute"> Cute / family-friendly appearance</label></div>
+  </div>
+
+  <!-- Authenticity & Build Quality -->
+  <div class="section">
+    <h2>Authenticity & Build Quality</h2>
+    <div class="question"><input type="checkbox" data-points="6" id="realbadge"><label for="realbadge"> Real performance badge (M, STi, Type R, AMG, etc.)</label></div>
+    <div class="question"><input type="checkbox" data-points="-10" id="fakebadge"><label for="fakebadge"> Fake performance badge</label></div>
+    <div class="question"><input type="checkbox" data-points="-5" id="fakevents"><label for="fakevents"> Fake vents / stick-on scoops</label></div>
+    <div class="question"><input type="checkbox" data-points="-4" id="fakeexhaust"><label for="fakeexhaust"> Fake exhaust tips</label></div>
+    <div class="question"><input type="checkbox" data-points="2" id="debadged"><label for="debadged"> Debadged / OEM clean</label></div>
+    <div class="question"><input type="checkbox" data-points="3" id="wrench"><label for="wrench"> I can do basic wrenching / oil changes</label></div>
+  </div>
+
+  <!-- Culture & Recognition -->
+  <div class="section">
+    <h2>Culture & Recognition</h2>
+    <div class="question"><input type="checkbox" data-points="5" id="media"><label for="media"> Featured in car media (movie, game, show)</label></div>
+    <div class="question"><input type="checkbox" data-points="10" id="enthusiast"><label for="enthusiast"> Recognized enthusiast car (Miata, Silvia, RX-7, Supra, etc.)</label></div>
+    <div class="question"><input type="checkbox" data-points="5" id="meets"><label for="meets"> Seen at car meets</label></div>
+    <div class="question"><input type="checkbox" data-points="-6" id="meme"><label for="meme"> Meme car (Prius, Juke, PT Cruiser, etc.)</label></div>
+    <div class="question"><input type="checkbox" data-points="2" id="winter"><label for="winter"> Daily-driven in winter</label></div>
+  </div>
+
+  <!-- Coolness Decay / Fallen Hero -->
+  <div class="section">
+    <h2>Coolness Decay</h2>
+    <div class="question"><input type="checkbox" data-points="-6" id="modernhero"><label for="modernhero"> Modern version of once-cool car</label></div>
+    <div class="question"><input type="checkbox" data-points="-6" id="luxbase"><label for="luxbase"> Luxury brand base model</label></div>
+    <div class="question"><input type="checkbox" data-points="-8" id="fakesport"><label for="fakesport"> Fake sporty trim</label></div>
+    <div class="question"><input type="checkbox" data-points="-10" id="lifestyleconv"><label for="lifestyleconv"> Lifestyle convertible (VW Eos, Sebring, etc.)</label></div>
+  </div>
+
+  <!-- Limited Editions & Gimmicks -->
+  <div class="section">
+    <h2>Limited Editions & Gimmicks</h2>
+    <div class="question"><input type="checkbox" data-points="10" id="limited"><label for="limited"> Genuine limited edition / numbered</label></div>
+    <div class="question"><input type="checkbox" data-points="5" id="perfpackage"><label for="perfpackage"> Factory performance package</label></div>
+    <div class="question"><input type="checkbox" data-points="-5" id="appearancegimmick"><label for="appearancegimmick"> Appearance-only trim / gimmick</label></div>
+  </div>
+
+  <!-- Lowest Trim / Base Model -->
+  <div class="section">
+    <h2>Lowest Trim / Base Model</h2>
+    <div class="question"><input type="checkbox" data-points="-5" id="lowesttrim"><label for="lowesttrim"> Lowest trim of the model</label></div>
+    <div class="question"><input type="checkbox" data-points="0" id="midtrim"><label for="midtrim"> Mid or higher trim</label></div>
+    <div class="question"><input type="checkbox" data-points="5" id="toptrim"><label for="toptrim"> Top trim with genuine performance features</label></div>
+  </div>
+
+  <!-- Condition & Damage -->
+  <div class="section">
+    <h2>Condition & Damage</h2>
+    <div class="question"><input type="checkbox" data-points="-10" id="majordamage"><label for="majordamage"> Major body damage</label></div>
+    <div class="question"><input type="checkbox" data-points="-5" id="moderatedamage"><label for="moderatedamage"> Moderate cosmetic damage</label></div>
+    <div class="question"><input type="checkbox" data-points="5" id="pristine"><label for="pristine"> Well-maintained / pristine</label></div>
+    <div class="question"><input type="checkbox" data-points="-3" id="neglected"><label for="neglected"> Functional but visibly neglected</label></div>
+  </div>
+
+  <button type="button" onclick="calculateScore()">Submit</button>
+</form>
+
+<p id="result"></p>
+
+<script>
+function calculateScore() {
+  let score = 50;
+  document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    if(cb.checked) score += parseInt(cb.dataset.points);
+  });
+  if(score < 0) score = 0;
+  if(score > 100) score = 100;
+
+  let verdict = '';
+  if(score >= 90) verdict = "Legendary / Poster Car";
+  else if(score >= 80) verdict = "Certified Classic / Icon";
+  else if(score >= 70) verdict = "Respectable Coupe / Enthusiast Ride";
+  else if(score >= 60) verdict = "Mildly Fun / Almost Cool";
+  else if(score >= 50) verdict = "Average Sport / Styling Attempt";
+  else if(score >= 40) verdict = "Luxury / Lifestyle Appliance";
+  else if(score >= 30) verdict = "Tech Flex / Daily Driver / Damaged Ride";
+  else verdict = "Daily Appliance / Meme Car / Total Disaster";
+
+  document.getElementById('result').innerText = `Score: ${score} | Verdict: ${verdict}`;
+}
+</script>
+
+</body>
+</html>
