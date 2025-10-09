@@ -1,11 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    background-color: #2d2d2d;
     padding: 20px;
   }
   
   h1, h2 {
     text-align: center;
+  }
+  
+
+  p {
+    color: rgb(255, 255, 255);
   }
   
   .section {
@@ -43,3 +48,34 @@ body {
     text-align: center;
   }
   
+  /* Logo styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 28px;
+  }
+  
+  .logo {
+    height: 60px;
+    width: auto;
+  }
+  
+/* Footer styling */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 40px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
